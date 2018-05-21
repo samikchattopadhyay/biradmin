@@ -6,7 +6,7 @@
         <div class="container">
 
 			<div class="row">
-				<div class="col"><h1>Dashboard</h1></div>
+				<div class="col"><h1>Manage Users</h1></div>
 			</div>
         	<div class="row">
         		<?php $this->load->view('templates/sidebar');?>

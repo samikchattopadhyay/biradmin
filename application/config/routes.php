@@ -57,6 +57,8 @@ $route['reset-password'] = 'auth/resetPassword';
 
 $route['dashboard'] = 'dashboard/index';
 
+$route['users/add'] = 'user/add';
+$route['users/list'] = 'user/lists';
 
 $route['default_controller'] = 'dashboard/index';
 $route['404_override'] = '';

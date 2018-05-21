@@ -83,7 +83,6 @@ class Authentication {
         $this->CI->load->library('Tokenmaker');
         $this->CI->load->model('retrieve_model');
         
-        
         // Generate random token for this user identity
         $randomToken = md5($identity->id . $identity->email . $this->CI->tokenmaker->getToken());
         
@@ -113,10 +112,6 @@ class Authentication {
         
         // Get the user ID for which this key was registered
         if ($userId = $this->validateResetKey($resetKey)) {
-            
-            t('$resetKey => ' . $resetKey);
-            t('$newPassword => ' . $newPassword);
-            t('$newPassword => ' . $userId);
             
             // Reset the old password with the new one
             $result = $this->CI->user_model->resetPassword($userId, $newPassword);
