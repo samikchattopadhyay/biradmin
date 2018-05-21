@@ -58,6 +58,6 @@ $route['reset-password'] = 'auth/resetPassword';
 $route['dashboard'] = 'dashboard/index';
 
 
-$route['default_controller'] = 'auth/login';
+$route['default_controller'] = 'dashboard/index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

@@ -17,6 +17,11 @@ class Dashboard extends CI_Controller {
             'identity_col' => 'username',
             'credential_col' => 'password'
         ));
+        
+        // If not logged in user, then redirect to login page
+        if (!$this->authentication->isLogged()) {
+            redirect('/login', 'refresh');
+        }
     }
 
 	/**
