@@ -34,7 +34,8 @@ class User extends CI_Controller {
     public function isUsernameAvailable($username) {
         $res = $this->user_model->isUsernameExist($username);
         if ($res) {
-        $this->validation->set_message('isUsernameAvailable', 'This username is already taken');
+            $this->validation->set_message('isUsernameAvailable', 'This username is already taken');
+        }
     }
     
     /**
