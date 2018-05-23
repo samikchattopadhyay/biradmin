@@ -11,8 +11,11 @@
 a:hover, a:focus, .btn-link:hover, .btn-link:focus {
 	text-decoration: none;
 }
-.form-control, .input-group-addon, .btn {
+.form-control, .input-group-text, .btn, .card, .alert {
 	border-radius: 0;
+}
+.form-control, textarea {
+	background-color: transparent;
 }
 textarea {
     resize: none;
@@ -23,13 +26,8 @@ textarea {
 body {
 	background-color: #E4E5E6;
 }
-.btn-custom {
-	background-color: #20A8D8;
-	color: #FFFFFF;
+.btn {
 	text-transform: uppercase;
-}
-.copyright {
-	padding-top: 15px;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
@@ -37,10 +35,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Domine';
 	color: #333333;
 }
+/* Asterisk after Required Form Field Labels */
 .form-group.required label:after { 
     color: #DD0000;
     content: "*";
-    position: absolute;
     margin-left: 4px;
 	font-size: 16px;
 	top: -2px;
@@ -69,21 +67,5 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
 }
 /* ==========================================
-				Login Page Custom CSS  
+				Dashboard Custom CSS  
 ===========================================*/
-.before-login .logo {
-    margin: 60px auto 0;
-    padding: 15px;
-	font-size: 30px;
-}
-.logo a {
-	color: #364150;
-}
-.logo span {
-	color: red;
-}
-.login-form {
-	background-color: #FFFFFF;
-	padding: 30px;
-	border: 1px solid #c8ced3;
-}

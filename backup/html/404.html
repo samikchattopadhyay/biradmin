@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>BirAdmin | Login</title>
+		<title>BirAdmin | Page Not Found</title>
 
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -29,7 +29,7 @@
 		<!-- Header Start -->
 		<header class="mt-5">
 			<!-- Logo Start -->
-			<div class="logo text-center">
+			<div class="logo pt-5 text-center">
 					<h1><a href="index.html" class="text-dark">BIR<span class="text-danger">ADMIN</span></a></h1>
 			</div>
 			<!-- Logo End -->
@@ -40,54 +40,23 @@
 		<div class="page-content">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-xl-4 col-lg-5 col-md-7 col-sm-9">
-						<!-- Login Start -->
-						<div class="card">
-							<div class="card-body">
-								<h2 class="card-title">Login</h2>
-								<p class="card-text text-muted">Login to your account</p>
-								<form name="loginForm" id="loginForm" action="" method="post">
-									<div class="alert alert-danger alert-dismissible fade show" role="alert">
-										<span> This user has been suspended for six months. </span>
-										<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="form-group has-success has-feedback required">
-										<label for="l_email" class="control-label">Email address</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text"><i class="fa fa-user"></i></span>
-											</div>
-											<input type="email" class="form-control is-invalid" id="l_email" name="l_email">
-											<div class="invalid-feedback">
-												That's not a valid email id.
-											</div>
-										</div>
-									</div>
-									<div class="form-group has-feedback required">
-										<label for="l_password">Password</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text"><i class="fa fa-lock"></i></span>
-											</div>
-											<input type="password" class="form-control is-invalid" id="l_password" name="l_password">
-											<div class="invalid-feedback">
-												Password must be 8 characters long.
-											</div>
-										</div>
-									</div>
-									<div class="checkbox">
-										<label><input type="checkbox"> Remember me</label>
-									</div>
-									<button type="submit" name="loginBtn" id="loginBtn" class="btn btn-primary">Submit</button>
-									<div class="pull-right">
-										<a href="forgot-password.html" class="btn btn-link text-primary">Forgot Password?</a>
-									</div>
-								</form>
-							</div>
+					<div class="col-md-6">
+						<div class="clearfix text-center">
+							<h2 class="display-3 mr-4">404</h2>
+							<h4 class="pt-3">Oops! You're lost.</h4>
+							<p class="text-muted">The page you are looking for was not found.</p>
 						</div>
-						<!-- Login End -->
+						<div class="input-prepend input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									<i class="fa fa-search"></i>
+								</span>
+							</div>
+								<input id="prependedInput" class="form-control" size="16" placeholder="What are you looking for?" type="text">
+								<span class="input-group-append">
+									<button class="btn btn-primary" type="button">Search</button>
+								</span>
+						</div>
 					</div>
 				</div>
 			</div>
