@@ -40,18 +40,14 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-xl-4 col-lg-5 col-md-7 col-sm-9">
-						<!-- Login Start -->
-						<div class="card">
-							<div class="card-body">
-								<h2 class="card-title">Login</h2>
-								<p class="card-text text-muted">Login to your account</p>
-								<form name="loginForm" id="loginForm" action="dashboard.html" method="post">
-									<div class="alert alert-danger alert-dismissible fade show" role="alert">
-										<span> This user has been suspended for six months. </span>
-										<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
+                        <!-- Login Start -->
+                        <form name="loginForm" id="loginForm" action="dashboard.html" method="post">
+    						<div class="card mb-3">
+                                <h5 class="card-header">LOGIN</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-danger">This user has been suspended for six months. </li>
+                                </ul>
+    							<div class="card-body">
 									<div class="form-group has-success has-feedback required">
 										<label for="l_email" class="control-label">Email address</label>
 										<div class="input-group">
@@ -76,16 +72,19 @@
 											</div>
 										</div>
 									</div>
-									<div class="checkbox">
-										<label><input type="checkbox"> Remember me</label>
-									</div>
-									<button type="submit" name="loginBtn" id="loginBtn" class="btn btn-primary">Submit</button>
-									<div class="pull-right">
-										<a href="forgot-password.html" class="btn btn-link text-primary">Forgot Password?</a>
-									</div>
-								</form>
-							</div>
-						</div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> 
+                                        <label class="form-check-label" for="defaultCheck1"> Remember me</label>
+                                    </div>
+    							</div>
+                                <div class="card-footer text-muted">
+                                    <button type="submit" name="loginBtn" id="loginBtn" class="btn btn-primary">Submit</button>
+                                    <div class="pull-right">
+                                        <a href="forgot-password.html" class="btn btn-link text-primary">Forgot Password?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
 						<!-- Login End -->
 					</div>
 				</div>
