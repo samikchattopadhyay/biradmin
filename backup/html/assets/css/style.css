@@ -11,7 +11,7 @@
 a:hover, a:focus, .btn-link:hover, .btn-link:focus {
 	text-decoration: none;
 }
-.form-control, .input-group-text, .btn, .card, .alert {
+.form-control, .input-group-text, .btn, .card, .alert, .dropdown-menu {
 	border-radius: 0;
 }
 .form-control, textarea {
@@ -19,6 +19,27 @@ a:hover, a:focus, .btn-link:hover, .btn-link:focus {
 }
 textarea {
     resize: none;
+}
+.dropdown-menu {
+	padding: 0;
+}
+.dropdown-item {
+    position: relative;
+    padding: 10px 20px;
+    border-bottom: 1px solid #c8ced3;
+}
+.dropdown-item i {
+    display: inline-block;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: -10px;
+    color: #c8ced3;
+    text-align: center;
+}
+.dropdown-item .badge {
+    position: absolute;
+    right: 10px;
+    margin-top: 2px;
 }
 /* ==========================================
 				Custom CSS  
@@ -67,5 +88,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
 }
 /* ==========================================
-				Dashboard Custom CSS  
+				Top Nav CSS  
 ===========================================*/
+.img-avatar {
+	height: 35px;
+	margin: 0 10px;
+}
