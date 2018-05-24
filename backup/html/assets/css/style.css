@@ -20,8 +20,9 @@ a:hover, a:focus, .btn-link:hover, .btn-link:focus {
 textarea {
     resize: none;
 }
-.dropdown-menu {
+header .navbar-nav .dropdown-menu {
 	padding: 0;
+	position: absolute;
 }
 .dropdown-item {
     position: relative;
