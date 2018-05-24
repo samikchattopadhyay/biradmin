@@ -68,6 +68,13 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 16px;
 	top: -2px;
 }
+/* Card Collapse CSS */
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+.card-header .collapsed .fa {
+  transform: rotate(90deg);
+}
 /* ==========================================
 				Pace Loading Animation  
 ===========================================*/
