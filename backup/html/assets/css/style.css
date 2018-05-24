@@ -14,7 +14,7 @@ a:hover, a:focus, .btn-link:hover, .btn-link:focus {
 .form-control, .input-group-text, .btn, .card, .alert, .dropdown-menu {
 	border-radius: 0;
 }
-.form-control, textarea {
+.before-login .form-control {
 	background-color: transparent;
 }
 textarea {
