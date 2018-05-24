@@ -10,21 +10,63 @@
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 		<!-- Font Awesome CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<!-- Pushy Menu CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pushy/1.1.2/css/pushy.min.css" />
 		<!-- Custom CSS -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
 	</head>
 	<!-- Head End -->
 	
 	<!-- Body Start -->
-	<body class="header-fixed">
+	<body class="after-login header-fixed">
+		<!-- Side Nav Start -->
+		<nav class="pushy pushy-left main-nav" data-focus="#first-link">
+			<div class="pushy-content">
+				<ul>
+					<li class="pushy-link"><a href="dashboard.html"><i class="fas fa-tachometer-alt mr-2"></i> Dashboard</a></li>
+					<li class="pushy-submenu">
+						<button><i class="far fa-clipboard mr-2"></i> Posts</button>
+						<ul>
+							<li class="pushy-link"><a href="all-posts.html">All Posts</a></li>
+							<li class="pushy-link"><a href="new-post.html">Add New</a></li>
+							<li class="pushy-link"><a href="post-categories.html">Categories</a></li>
+						</ul>
+					</li>
+					<li class="pushy-submenu">
+						<button><i class="fas fa-file-alt mr-2"></i> Pages</button>
+						<ul>
+							<li class="pushy-link"><a href="all-pages.html">All Pages</a></li>
+							<li class="pushy-link"><a href="new-page.html">Add New</a></li>
+						</ul>
+					</li>
+					<li class="pushy-link"><a href="uploader.html"><i class="fas fa-images mr-2"></i> Media</a></li>
+					<li class="pushy-submenu">
+						<button><i class="fa fa-user mr-2"></i> Users</button>
+						<ul>
+							<li class="pushy-link"><a href="all-users.html">All Users</a></li>
+							<li class="pushy-link"><a href="new-user.html">Add New</a></li>
+							<li class="pushy-link"><a href="profile.html">Your Profile</a></li>
+						</ul>
+					</li>
+					<li class="pushy-link"><a href="tools.html"><i class="fa fa-wrench mr-2"></i> Tools</a></li>
+					<li class="pushy-submenu">
+						<button><i class="fa fa-cog mr-2"></i> Settings</button>
+						<ul>
+							<li class="pushy-link"><a href="general-settings.html">General</a></li>
+							<li class="pushy-link"><a href="reading-settings.html">Reading</a></li>
+							<li class="pushy-link"><a href="writing-settings.html">Writing</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Side Nav End -->
+		
+		<!-- Site Overlay -->
+		<div class="site-overlay"></div>
+		
+		<div class="push">
 		<!-- Header Start -->
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,10 +77,10 @@
 							<a class="nav-link" href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="users.html">Users</a>
+							<a class="nav-link" href="profile.html">Profile</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="settings.html">Settings</a>
+							<a class="nav-link" href="general-settings.html">Settings</a>
 						</li>
 					</ul>
 				</div>
@@ -94,7 +136,7 @@
 						</div>
 					</li>
 				</ul>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="menu-btn" type="button" data-toggle="collapse" data-target="#side-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 			</nav>
@@ -103,18 +145,17 @@
 		
 		<!-- Page Content Start -->
 		<div class="page-content">
-			<div class="container">
-				
-			</div>
+		
 		</div>
 		<!-- Page Content End -->
 		
 		<!-- Footer Start -->
-		<footer class="mb-5">
-			<div class="copyright text-center pt-3"> 2018 &copy; BirAdmin | All Rights Reserved </div>
+		<footer class="p-2 bg-dark text-light text-center">
+			<small> 2018 &copy; BirAdmin | All Rights Reserved </small>
 		</footer>
 		<!-- Footer End -->
-
+		</div>
+		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<!-- Latest compiled and minified JavaScript -->
@@ -122,6 +163,8 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 		<!-- Pace JavaScript -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+		<!-- Pushy Menu JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pushy/1.1.2/js/pushy.js"></script>
 		<!-- Custom JavaScript -->
 		<script src="assets/js/script.js"></script>
 	</body>

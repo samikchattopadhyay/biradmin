@@ -48,6 +48,9 @@ header .navbar-nav .dropdown-menu {
 body {
 	background-color: #F6F6F9;
 }
+.after-login .page-content {
+	min-height: 600px;
+}
 .btn {
 	text-transform: uppercase;
 }
@@ -94,4 +97,41 @@ h1, h2, h3, h4, h5, h6 {
 .img-avatar {
 	height: 35px;
 	margin: 0 10px;
+}
+/* ==========================================
+			Side Nav - Pushy Menu CSS  
+===========================================*/
+/* Prevent bg scroll when pushy menu is open */
+html, body{
+    overflow-x: hidden;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+/* Main Menu styling */
+.pushy {
+	width: 250px;
+}
+.pushy ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+.pushy ul li {
+	border-bottom: 1px solid #222222;
+}
+.pushy ul > li ul li:first-child {
+	border-top: 1px solid #222222;
+}
+.pushy-link:hover, .pushy-submenu button:hover {
+	background-color: #000;
+}
+.pushy .active {
+	background-color: #000;
+}
+.pushy-left {
+	transform: translate3d(-300px, 0, 0);
+}
+/* Menu Button */
+.menu-btn {
+	border:none;
+	background-color: transparent;
 }
